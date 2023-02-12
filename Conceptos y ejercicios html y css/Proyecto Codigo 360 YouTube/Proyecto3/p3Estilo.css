@@ -1,0 +1,84 @@
+
+
+.material-icons {
+  font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+  
+  body
+  {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #FBFAF5;
+  }
+  
+ 
+  
+  .search-bar
+  {
+    width: 680px;
+    border: solid 1px #ccc;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 80px auto;
+    
+  }
+  .search-bar:focus-within{
+    border: solid #aaa;
+    box-shadow: 15px 10px 5px #aaaa;
+  }
+  
+  .search-bar input
+{
+  border: none;
+  outline: none; /*saca el otro borde interno */
+   flex: 1; 
+   pad: 10px;
+  font-size: 10px;
+  background-color: #FBFAF5;
+}
+
+.search-bar .actions
+{
+  display: flex;
+  gap: 5px;
+  
+}
+
+.search-bar .actions button
+{
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;  /* aparece una manito   */
+  
+}
+
+.search-bar .actions button:hover
+{
+  color: cadetblue;
+}

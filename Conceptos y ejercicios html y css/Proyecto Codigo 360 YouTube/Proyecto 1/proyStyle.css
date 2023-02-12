@@ -1,0 +1,64 @@
+/* proyecto 1 nav*/
+
+body
+{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+header
+{
+    display: flex;
+    background-color: #083270;
+    min-height: 70px; /* Tamaño de la franja azul  */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+   
+}
+
+.logo
+{
+
+    display: flex;
+    align-items: center; /* No se separa si se lo agragamos al header, uno por uno hay que agreg */
+}
+
+.logo img
+{
+    height: 50px;
+    margin-right: 12px;
+}
+
+nav a 
+{
+    font-weight: 600; /* Grosor de las letras */
+    padding-right: 10px;  /* Separacion entre links */
+}
+
+/* Cambiar de color los links cunado pasas el mouse por arriba */
+
+nav a:hover{
+color: #E18056;
+}
+
+@media (max-width: 720px)
+{
+    header
+    {
+        flex-direction: column;
+    }
+
+    nav
+    {
+        padding: 10px, 0px;
+    }
+}
+

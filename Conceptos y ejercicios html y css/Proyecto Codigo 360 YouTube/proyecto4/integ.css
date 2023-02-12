@@ -1,0 +1,82 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    color: aliceblue;
+}
+
+.container
+{
+    height: 100vh;
+    width: 100vw;
+    /* width: 1800px;
+    height: 1000px; */
+    background-color: #461414;
+    margin: 0;   /* ver que onda wey */
+    padding: 10px;
+    text-align: center;
+
+}
+
+.header
+{
+    height: 15%;
+    background-color: #727272;
+    border-radius: 1em;
+    padding: 10px;
+}
+
+.navigator  
+{
+    height: 10%;
+    background-color: #262626;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+.content
+{
+    height: 53%;
+    background-color: E5E5E5;
+    margin: 1em;
+    
+
+}
+
+.footer
+{
+    height: 15%;
+    background-color: #727272;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+.content .section
+{
+    height: 95%;
+    width: 71%;
+    background-color: #AAAAAA;
+    border-radius: 1em;
+    float: left;
+    margin: 0.5em;
+}
+
+.content .aside
+{
+    height: 95%;
+    width: 25%;
+    background-color: #AAAAAA;
+    border-radius: 1em;
+    float: right;
+    margin: 0.5em;
+}
+
+.content .section .art   
+{
+    width: 90%;
+    height: 20%;
+    background-color: #262626;
+    margin: 1em;
+    border-radius: 1em;
+}
+/* se separa todo cuando le pones el mismo nombre a la class y le das margin */

@@ -1,0 +1,280 @@
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+
+  .container .search-bar:hover
+  {
+    box-shadow: 5px 5px 10px black;
+  }
+
+  .container #buscarText
+  {
+    margin-left: 202px;
+  }
+
+.container .search-bar
+{
+    width: 680px;
+    border: solid 1px #ccc;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 80px auto;
+    justify-content: space-between;
+    margin-right: 300px;
+    cursor: pointer;
+}
+
+
+body
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 120%;
+    background-color: #d3d3d3;
+    /* background-color:  #fdfff5 ; */
+    margin: 0;
+    padding: 0;
+   
+}
+
+.container aside img
+{
+    width: 180px;
+}
+
+.container aside
+{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+
+.container .otroContaiener img
+{
+    
+  
+    width: 150px;
+}
+
+/* .container .otroContaiener h3
+{
+    
+   
+}
+
+.container .otroContaiener h2
+{
+    
+   
+}
+
+
+.container .otroContaiener h1
+{
+   
+} */
+
+.container .otroContaiener
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+   margin: 10px;
+    background-color: #d3d3d3;
+    border-radius: 20px;
+    height: 300px;
+   
+}
+
+.container .contMainSide main h1
+{
+ text-align: center;
+}
+
+    
+.container .contMainSide .products img:hover            /* SOLO LAS IAMGENES QUEDAN BIEN SALTANDO, SINO SE DESFAZA TODO */
+{
+    display: inline-flex;
+    transform: translateY(-20px)
+    
+}
+
+
+.container .contMainSide .products
+{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding:0 10px;
+    
+}
+
+.container .contMainSide .products img{
+    height: 80px;
+    transition: transform 0.4s ease-in-out              /* SE PONE LA VELOCIDAD EN EL CONTENEDOR MAS DIRECTO A LAS IMAGENES */
+}
+
+.container
+{
+  padding: 10px;
+  
+   height: 90%;
+  
+   justify-content: space-around;
+   
+   
+}
+
+header{  
+    
+    padding: 10px;
+    height: 10vh;
+    width: 100vw;
+    /*background-color: #45adff; */
+}
+
+.container header .logos #letrasStore
+{
+    height: 90px;
+    margin-left: 250px;
+    margin-top: -40px;
+}
+
+.container header .logos #logitoAppstore
+{
+    display: flex;
+    margin-right: 100px;
+}
+
+.container header .logos
+{
+    margin-right: -200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.container header img
+{
+    
+    padding: 10px;
+    height: 50px;
+}
+
+nav{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100vw;
+    background-color: #fdfff5; 
+    /* background-color: #50e3c2;  */
+    border-radius: 20px;
+    gap: 10px;
+}
+
+nav input
+{
+    
+    outline: none;
+    border:none
+    
+    /* box-shadow: 5px 5px 5px black; */
+}
+.container .contMainSide
+{
+    
+    height: 100vh; /* parte la medida desde el navigator */
+    width: 100vw;
+    position: relative;
+   
+    margin-top: 10px;
+    
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+} /* poner absolute y relative para acomodar todo dentro de los container de elementos */
+
+main
+{
+    
+    position: relative;
+    height: 100%;
+    width: 67%;
+    
+   border-radius: 25px;
+   
+   background-color: #fdfff5
+}
+
+aside
+{
+    border-radius: 20px;
+   
+   
+    border-radius: 20px;
+    position: relative;
+    height: 100%;
+    width: 30%;
+    background: #ff5436;
+}
+
+footer
+{
+    margin-top: 10px;
+    border-radius: 20px;
+   
+    height: 50px;
+    width: 100vw;
+    background-color: #45adff;
+    /* background-color: rgb(42, 165, 48); */
+    
+    
+}
+
+.container footer
+{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    
+}
+

@@ -1,0 +1,142 @@
+/*POKEMONES FLOTANTES*/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: azure;
+    background-color: #2d6dcc;
+}
+header
+{
+    width: 100vw;
+    height: 150px;
+    /* border: 1px solid black; */
+    display: flex;       /*con la op flex activada se centra la imagen en este caso el logo*/
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header img
+{
+
+    height: 80px;
+    margin-right: 10px;
+    
+}
+
+header nav a{
+    padding-right: 40px;
+    color: azure;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #E18056;
+}
+
+
+.imagenes_container
+{
+  
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://www.nintenderos.com/wp-content/uploads/2022/11/79yuxnSjikJYnFgE.jpg");    
+    background-size: cover;
+    
+}
+
+.imagenes_container .imagen
+{
+    position: relative;
+    margin-right: -20px;
+    display: inline-flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 100px;
+ 
+    padding: 5px;
+    box-shadow: 20px 20px 20px black;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/481px-Pokebola-pokeball-png-0.png");
+    background-size: cover;
+    
+}
+
+.imagenes_container .imagen img
+{
+    
+ 
+    
+    width: 150px;
+    height: 150px;
+    transition: transform 0.4s ease-in-out; /* le da como un delay */
+   
+}
+
+.imagenes_container .imagen .nombre
+{
+    position: absolute;  /*Con esto se destraba lo de top */
+    background-color: black;
+    border-radius: 5px;
+    color: aliceblue;
+    display: none;
+    min-width: 100px;
+    width: 150px;
+    top: -55px; /* solo singifica margin */
+    /* left: calc(-50% -30px);  calcula la posicion dentro de su contenedor padre  */
+    padding: 10px 15px;
+}
+
+.imagenes_container .imagen .nombre .texto
+{
+    display: inline-block;
+    text-overflow: ellipsis; /*desbordamiento*/
+    overflow: hidden;
+    white-space: nowrap; /* hace mas pequeños los espacios en blanco */
+    margin: 0 auto; /* dada esta medida ya no cabe el texto */
+    width: 150px;
+    
+    text-align: center;
+    box-sizing: border-box; /*adapta la caja que lo cont */
+}
+
+.imagenes_container .imagen:hover .nombre
+{
+    display: inline-block;
+    transform: translateY(-20px); /*animacion del nombre*/
+}
+
+
+.imagenes_container .imagen .nombre::before
+{
+     content: ""; /* si ponemos un texto aparece el contenido */
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     left: 40%;
+     bottom: -20px;
+   
+      border-top: 10px solid black;  
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+}
+
+/* efectos en las imagenes */
+.imagenes_container .imagen:hover img{
+    transform: translateY(-20px); /* se le pone el eje y z */
+}
+
+@media (max-width: 680px) /* a determinado ancho max deseo que: abajo se especifica*/
+{
+    .imagenes_container
+    {
+        flex-direction: column;
+        height: 180vh;
+    }
+}

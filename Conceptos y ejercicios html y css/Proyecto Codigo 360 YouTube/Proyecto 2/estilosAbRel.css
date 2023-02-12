@@ -1,0 +1,18 @@
+.box
+{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: whitesmoke;
+}
+
+#dos
+{
+    /* position: absolute; */ /* esto hace que se superpongan toma por referencia otra posicion, la del body o cualquier contenedor padre*/
+    top: 40px;
+    left: 40px;
+    background: green;
+    position: relative; /* toma como ref su misma posicion */
+}
+ 

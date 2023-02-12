@@ -1,0 +1,53 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .cabeza
+{
+    color: #E6ECFF;
+    background-color: #624735;
+    height: 100vh;
+    width: 20vw;
+    border: 1px solid black;
+}
+
+.contenedor .piel
+{
+    background-color: #E2C4BC;
+    height: 100vh;
+    width: 20vw;
+    border: 1px solid black;
+}
+
+.contenedor .camiseta
+{
+    background-color: #B2F73E;
+    height: 100vh;
+    width: 20vw;
+    border: 1px solid black;
+}
+
+.contenedor .numeros
+{
+    background-color: #F6F8FC;
+    height: 100vh;
+    width: 20vw;
+    border: 1px solid black;
+}
+
+.contenedor .botines
+{
+    background-color: #E6ECFF;
+    height: 100vh;
+    width: 20vw;
+    border: 1px solid black;
+}

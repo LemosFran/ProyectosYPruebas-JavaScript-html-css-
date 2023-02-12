@@ -1,0 +1,86 @@
+:root
+{
+    --color1: #F8B78B;
+    --color2: #f78c44;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 65.5%; //rem
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body
+{
+    font-family: sans-serif;
+    background-color: var(--color1);
+    background-image: url(../img/pokeGo.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 350px;
+    background-position: right 50vw bottom 50vh left 50vw top 50vh; // buscar imagenes tipo icono para ponerlas de fondo
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.card
+{
+    background-color: azure;
+    width: 350px;
+    border-radius: 16px;
+    box-shadow: 2px 2px 15px rgb(0, 0, 0);
+    overflow: hidden; // se esconden las esquinas
+ // aqui sass toma como que el guion del nombre "card-header" es el enlace y se enlaza asi
+ &-header
+    {
+        width: 100%;
+        display: block;
+    }
+
+ &-body
+ {
+    display: flex;
+    flex-direction: column;
+   // background-color: lime;
+    align-items: center;
+    border-bottom: 1px solid var(--color2);
+  //es el hijo, se escribe dentro del  padre, no aparte
+  &-contentImg
+    {
+    
+        border: 5px solid #f67c55;
+        border-radius: 50%;
+        background-color: #F8B78B;
+        box-shadow: 0px -10px 20px #f67c55;
+        margin-top: calc(-50px - 60px);
+        
+        &-img
+        {
+            padding: 20px;
+        }
+    }
+    &-title
+    {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        span
+       { background-color: var(--color2);}
+
+    }
+ }
+
+ &-footer
+ {
+text-align: center; }
+
+
+}
+

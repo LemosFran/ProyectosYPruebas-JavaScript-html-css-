@@ -1,0 +1,112 @@
+body
+{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.contenedor
+{
+    background-color: #0639af;
+    display: flex;
+    width: 100%;  /* de arriba a abajo unvade todo */
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+.contenedor .sub-contenedor
+{
+    width: 600px;
+    border-radius: 10px;
+    background-color: azure;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 10px rgb(29, 87, 212);
+    
+}
+
+.contenedor .sub-contenedor .contenido
+{
+    background-color: azure;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    flex: auto;
+
+}
+
+.contenedor .sub-contenedor .contenido .icono
+{
+    margin-right: 10px;
+
+}
+
+.contenedor .sub-contenedor .contenido .icono .mensaje .title
+{
+    background-color: azure;
+    font-weight: bolder;
+
+}
+
+.contenedor .sub-contenedor .actions
+{
+    background-color: azure;
+    padding: 10px 0;
+    display: flex; /* se hace responsive */
+    justify-content: end;
+    gap: 10px;
+
+}
+
+.contenedor .sub-contenedor .actions button
+{
+    border: none;
+    padding: 15px;
+    min-width: 120px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.contenedor .sub-contenedor .actions .btn-descargar
+{
+    background-color: #268FC0;
+    color: azure;
+}
+
+.contenedor .sub-contenedor .actions .btn-descargar:hover
+{
+    background-color: #0e6d99;
+
+}
+
+.contenedor .sub-contenedor .actions .btn-volver
+{
+    background-color: azure;
+    border: solid 1px #ccc;
+
+}
+
+.contenedor .sub-contenedor .actions .btn-volver:hover
+{
+    background-color: #eee;
+}
+
+@media (max-width:680px)
+{
+    .contenedor .sub-contenedor
+    {
+        width: 80%;
+        
+
+    }
+    .contenedor .sub-contenedor .actions
+        {
+            flex-direction: column;  /* en el responsive cambia, se colcan de arriba a abajo */
+        }
+}

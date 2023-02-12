@@ -1,0 +1,119 @@
+:root
+{
+    --mainColor: #FAFAFA;
+    --appleGrey: #AAAAAA;
+    --colorFooter: #2c3f50
+
+}
+
+body
+{
+    background-color: var(--mainColor);
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--mainColor);
+
+}
+
+.container
+{
+    height: 100vh; /* No hace falta poner el width */
+ 
+    
+
+   .header /* esta dentro de container por eso se escribe dentro */
+    {
+        background-color: var(--appleGrey);
+        
+        
+       &-logos
+       {
+        
+       
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        padding-right: 10px;
+        
+        .payLogo
+        {
+            width: 60px;
+        }
+       
+       }
+    }
+    
+    .main
+    {
+       display: flex;
+       align-items: center;
+       justify-content: space-around;
+       flex-direction: row;
+        &-compra
+        {
+            height: 400px;
+            width: 65%;
+            background-color: var(--appleGrey);
+            border-radius: 15px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+            img
+            {
+                
+                height: 300px;
+            }
+        }
+
+        aside
+        {
+            
+            
+           text-align: center;
+            
+           
+            height: 400px;
+            width: 30%;
+            background-color: var(--appleGrey);
+            border-radius: 15px;
+            h3
+            {
+                margin-top: 100px;
+            }
+
+        }
+    }
+
+    .pagoAprovado
+    {
+        height: 40px;
+        width: 100%;
+        background-color: green;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img
+        {
+            
+            width: 30px;
+        }
+    }
+    footer
+    {
+        height: 50px;
+        width: 100%;
+        background-color: var(--colorFooter);
+        margin-top: 75px;
+        padding-bottom: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+}
